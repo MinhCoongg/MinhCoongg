@@ -1,0 +1,4146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="noidung.css" />
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
+    
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+   
+
+   
+   </head>
+  <body >
+    
+
+    <div class="box">
+      <img class="hethang" src="../ĐỒ ÁN WEB/img/hethang.png" alt="hethang" />
+      <div class="thongbaoogiohang">
+        <p1>Chưa có sản phẩm trong giỏ hàng của bạn.</p1>
+      </div>
+      <a class="thongbaoogiohang" href="tkweb.html">Tiếp tục mua hàng</a>
+    </div>
+
+    <div class="phangiohanghangchinh">
+    <section class="h-100 h-custom">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="biill">
+                  <tr>
+                    <th scope="col" class="h5">Giỏ Hàng</th>
+                    <th scope="col">Thể Loại</th>
+                    <th scope="col">Số Lượng</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Xoá</th>
+                    <th scope="col">ThànhTiền</th>
+                  </tr>
+                </thead>
+                <tbody id="cart">
+                  <tr class="top1">
+                    <th scope="row" >
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935236425254.jpg"
+                          class="img-fluid rounded-3"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+             
+                        <div class="flex-column ms-4 ">
+                          <p class="mb-2">Truyện Tranh Cười Dân Gian Việt Nam</p>
+                          <p class="mb-0">Tác giả:Nguyễn Phương</p>
+                        </div>
+                      
+                    </th>
+                    <td class="align-middle">
+                      <p class="mb-0  "style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    </div>
+                    <td class="align-middle">
+                      <div class="d-flex flex-row ">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="2"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+                        
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    
+                    <td class="align-middle">
+                      <p class="mb-0 gia" style="font-weight: 500">117450</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="submit" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                    
+                  </tr>
+                  
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/9/7/9784088830926.jpg"
+                          class="img-fluid rounded-3"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            ドラゴンボール超 18 - Dragon Ball Super 18
+                          </p>
+                          <p class="mb-0">Tác giả:とよたろう, 鳥山 明</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 " style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+              
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                      
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">141550</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                
+
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_43037.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Truyện Tranh Trạng Quỷnh - Tập 370: Bản Di Chúc
+                          </p>
+                          <p class="mb-0">Tác giả:Kim Khánh</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">10800</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_194902.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            ＯＮＥ　ＰＩＥＣＥ　７７
+                          </p>
+                          <p class="mb-0">Tác giả:Eiichiro Oda</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">141550</p>
+
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_227064.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            ドラえもん 3 - Doraemon 3
+                          </p>
+                          <p class="mb-0">Tác giả:Fujiko F. Fujio</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">160550</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_5579.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            名探偵コナン 100 - Detective Conan 100
+                          </p>
+                          <p class="mb-0">Tác giả:青山 剛昌</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">162000</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935244868227.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Naruto - Tập 53 - Naruto Ra Đời (Tái Bản 2022)
+                          </p>
+                          <p class="mb-0">
+                            Tác giả:Masashi Kishimoto
+                          </p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">
+                        23750
+                      </p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043561272_1_1.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Thỏ Bảy Màu Và Những Người Nghĩ Nó Là Bạn (Tái Bản 2023)
+                          </p>
+                          <p class="mb-0">
+                            Tác giả:HUỲNH THÁI NGỌC
+                          </p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">89100</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/9/7/9784867202852.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            終末のワルキューレ 13 - Shuumatsu no Valkyrie - Record Of Ragnarok
+                          </p>
+                          <p class="mb-0">Nhà xuất bản:Coamix</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia"  style="font-weight: 500">178400</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935236425254.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Truyện Tranh Cười Dân Gian Việt Nam
+                          </p>
+                          <p class="mb-0">Tác giả:Nguyễn Phương</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Truyện tranh</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">117450</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066692298.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Thao Túng Tâm Lý - Nhận Diện, Thức Tỉnh Và Chữa Lành Những Tổn Thương Tiềm Ẩn
+                          </p>
+                          <p class="mb-0">Tác giả:Shannon Thomas, LCSW</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">109850</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/p/h/ph_c-h_a-ch_n-dung-k_-ph_m-t_i.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Tâm Lý Học Tội Phạm - Phác Họa Chân Dung Kẻ Phạm Tội
+                          </p>
+                          <p class="mb-0">Tác giả:Diệp Hồng Vũ</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">94250</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086856000.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Bạn Đang Nghịch Gì Với Đời Mình?
+                          </p>
+                          <p class="mb-0">Tác giả:J Krishnamurti</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">93000</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-thi_n-t_i-b_n-tr_i-k_-_i_n-b_n-ph_i_1.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Thiên Tài Bên Trái, Kẻ Điên Bên Phải (Tái Bản 2021)
+                          </p>
+                          <p class="mb-0">Tác giả:Cao Minh</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">116350</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/b/i/bia_tam-ly-hoc-ve-su-truong-thanh_infinal.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Tâm Lý Học Về Sự Trưởng Thành
+                          </p>
+                          <p class="mb-0">Tác giả:Bìa Mềm</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">79570</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_4_9.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Tâm Lý Học Về Sự Tự Tôn
+                          </p>
+                          <p class="mb-0">Tác giả:Yoon Hong Gyun</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">70950</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                  </tr>
+                  <tr class="top1">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1---b_n-l_-b_c-s_-t_m-l_-c_a-ch_nh-m_nh.jpg"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Bạn Là Bác Sĩ Tâm Lý Của Chính Mình
+                          </p>
+                          <p class="mb-0">Tác giả:Lý Hoành Phu</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row top">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0 gia" style="font-weight: 500">70080</p>
+                    </td>
+                    <td class="align-middle">
+                      <button type="button" class="btnDel">Xóa</button>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                    </td>
+                </tr>
+                <tr class="top1">
+                  <th scope="row" class="border-bottom-0">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://cdn0.fahasa.com/media/catalog/product/c/h/chualanhduatre-bia-01.jpg"
+                        style="width: 120px"
+                        alt="Book"
+                      />
+                      <div class="flex-column ms-4">
+                        <p class="mb-2">
+                          Chữa Lành Đứa Trẻ Tổn Thương Bên Trong
+                        </p>
+                        <p class="mb-0">Tác giả:Robert Jackman</p>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle border-bottom-0">
+                    <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                  </td>
+                  <td class="align-middle border-bottom-0">
+                    <div class="d-flex flex-row top">
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      >
+                        <i class="fas fa-minus"></i>
+                      </button>
+
+                      <input
+                        id="form1"
+                        min="0"
+                        name="quantity"
+                        value="1"
+                        type="number"
+                        class="form-control form-control-sm"
+                        style="width: 50px"
+                      />
+
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      >
+                        <i class="fas fa-plus"></i>
+                      </button>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="align-middle border-bottom-0">
+                    <p class="mb-0 gia" style="font-weight: 500">127840</p>
+                  </td>
+                  <td class="align-middle">
+                    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                  </td>
+                </tr>
+            
+              <tr class="top1">
+                <th scope="row" class="border-bottom-0">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src=""
+                      style="width: 120px"
+                      alt="Book"
+                    />
+                    <div class="flex-column ms-4">
+                      <p class="mb-2">
+                        Trốn Và Tìm - Tâm Lý Học Về Sự Tự Huyễn
+                      </p>
+                      <p class="mb-0">Tác giả:Neel Burton</p>
+                    </div>
+                  </div>
+                </th>
+                <td class="align-middle border-bottom-0">
+                  <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+                </td>
+                <td class="align-middle border-bottom-0">
+                  <div class="d-flex flex-row top">
+                    <button
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                      class="form-control form-control-sm"
+                      style="width: 50px"
+                    />
+
+                    <button
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom-0">
+                  <p class="mb-0 gia" style="font-weight: 500">79570</p>
+                </td>
+                <td class="align-middle">
+                  <button type="button" class="btnDel">Xóa</button>
+                </td>
+                <td class="align-middle">
+                  <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+                </td>
+              </tr>
+            <tr class="top1">
+              <th scope="row" class="border-bottom-0">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_220008.jpg"
+                    style="width: 120px"
+                    alt="Book"
+                  />
+                  <div class="flex-column ms-4">
+                    <p class="mb-2">
+                      Tâm Lý Học Về Tiền
+                    </p>
+                    <p class="mb-0">Tác giả:Morgan Housel</p>
+                  </div>
+                </div>
+              </th>
+              <td class="align-middle border-bottom-0">
+                <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+              </td>
+              <td class="align-middle border-bottom-0">
+                <div class="d-flex flex-row top">
+                  <button
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    class="btn btn-link px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  >
+                    <i class="fas fa-minus"></i>
+                  </button>
+
+                  <input
+                    id="form1"
+                    min="0"
+                    name="quantity"
+                    value="1"
+                    type="number"
+                    class="form-control form-control-sm"
+                    style="width: 50px"
+                  />
+
+                  <button
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    class="btn btn-link px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                  </div>
+                </div>
+              </td>
+              <td class="align-middle border-bottom-0">
+                <p class="mb-0 gia" style="font-weight: 500">122850</p>
+              </td>
+              <td class="align-middle">
+                <button type="button" class="btnDel">Xóa</button>
+              </td>
+              <td class="align-middle">
+                <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+              </td>
+            </tr>
+          <tr class="top1">
+            <th scope="row" class="border-bottom-0">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_236468.jpg"
+                  style="width: 120px"
+                  alt="Book"
+                />
+                <div class="flex-column ms-4">
+                  <p class="mb-2">
+                    Tớ Học Lập Trình - Làm Quen Với Lập Trình Scratch
+                  </p>
+                  <p class="mb-0">Tác giả:Rosie Dickins, Louie Stowell, Jonathan Melmoth , Shaw Nielsen</p>
+                </div>
+              </div>
+            </th>
+            <td class="align-middle border-bottom-0">
+              <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+            </td>
+            <td class="align-middle border-bottom-0">
+              <div class="d-flex flex-row top">
+                <button
+                  data-mdb-button-init
+                  data-mdb-ripple-init
+                  class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                >
+                  <i class="fas fa-minus"></i>
+                </button>
+
+                <input
+                  id="form1"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                  class="form-control form-control-sm"
+                  style="width: 50px"
+                />
+
+                <button
+                  data-mdb-button-init
+                  data-mdb-ripple-init
+                  class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                >
+                  <i class="fas fa-plus"></i>
+                </button>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle border-bottom-0">
+              <p class="mb-0 gia" style="font-weight: 500">81900</p>
+            </td>
+            <td class="align-middle">
+              <button type="button" class="btnDel">Xóa</button>
+            </td>
+            <td class="align-middle">
+              <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+            </td>
+        </tr>
+        <tr class="top1">
+          <th scope="row" class="border-bottom-0">
+            <div class="d-flex align-items-center">
+              <img
+                src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-8935095633166-8935095633340.jpg"
+                style="width: 120px"
+                alt="Book"
+              />
+              <div class="flex-column ms-4">
+                <p class="mb-2">
+                  Combo Sách Giáo Trình Kỹ Thuật Lập Trình C Căn Bản Và Nâng Cao + Giáo Trình C++ Và Lập Trình Hướng Đối Tượng (Bộ 2 Cuốn)
+                </p>
+                <p class="mb-0">Tác giả:GS Phạm Văn Ất, ThS Đỗ Văn Tuấn, ThS Nguyễn Hiếu Cường, Lê Trường Thông</p>
+              </div>
+            </div>
+          </th>
+          <td class="align-middle border-bottom-0">
+            <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+          </td>
+          <td class="align-middle border-bottom-0">
+            <div class="d-flex flex-row top">
+              <button
+                data-mdb-button-init
+                data-mdb-ripple-init
+                class="btn btn-link px-2"
+                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+              >
+                <i class="fas fa-minus"></i>
+              </button>
+
+              <input
+                id="form1"
+                min="0"
+                name="quantity"
+                value="1"
+                type="number"
+                class="form-control form-control-sm"
+                style="width: 50px"
+              />
+
+              <button
+                data-mdb-button-init
+                data-mdb-ripple-init
+                class="btn btn-link px-2"
+                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+              >
+                <i class="fas fa-plus"></i>
+              </button>
+              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+              </div>
+            </div>
+          </td>
+          <td class="align-middle border-bottom-0">
+            <p class="mb-0 gia" style="font-weight: 500">235505</p>
+          </td>
+          <td class="align-middle">
+            <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+          </td>
+        </tr>
+      <tr class="top1">
+        <th scope="row" class="border-bottom-0">
+          <div class="d-flex align-items-center">
+            <img
+              src="https://cdn0.fahasa.com/media/catalog/product/b/i/bia-ky-thuat-lap-trinh-c-14-03-fix-_1_-b1.jpg"
+              style="width: 120px"
+              alt="Book"
+            />
+            <div class="flex-column ms-4">
+              <p class="mb-2">
+                Giáo Trình Kỹ Thuật Lập Trình C Căn Bản & Nâng Cao (Tái Bản 2023)
+              </p>
+              <p class="mb-0">Tác giả:GS. Phạm Văn Ất, ThS. Đỗ Văn Tuấn, ThS. Nguyễn Hiếu Cường, Lê Trường Thông</p>
+            </div>
+          </div>
+        </th>
+        <td class="align-middle border-bottom-0">
+          <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+        </td>
+        <td class="align-middle border-bottom-0">
+          <div class="d-flex flex-row top">
+            <button
+              data-mdb-button-init
+              data-mdb-ripple-init
+              class="btn btn-link px-2"
+              onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+            >
+              <i class="fas fa-minus"></i>
+            </button>
+
+            <input
+              id="form1"
+              min="0"
+              name="quantity"
+              value="1"
+              type="number"
+              class="form-control form-control-sm"
+              style="width: 50px"
+            />
+
+            <button
+              data-mdb-button-init
+              data-mdb-ripple-init
+              class="btn btn-link px-2"
+              onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+            >
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+              <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+            </div>
+          </div>
+        </td>
+        <td class="align-middle border-bottom-0">
+          <p class="mb-0 gia" style="font-weight: 500">117250</p>
+        </td>
+        <td class="align-middle">
+          <button type="button" class="btnDel">Xóa</button>
+        </td>
+        <td class="align-middle">
+          <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+        </td>
+      </tr>
+    <tr class="top1">
+      <th scope="row" class="border-bottom-0">
+        <div class="d-flex align-items-center">
+          <img
+            src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_235843.jpg	"
+            style="width: 120px"
+            alt="Book"
+          />
+          <div class="flex-column ms-4">
+            <p class="mb-2">
+              Tớ Đến Với Khoa Học Máy Tính: Thuật Toán Và Lập Trình
+            </p>
+            <p class="mb-0">Tác giả:TS Tracy Gardner</p>
+          </div>
+        </div>
+      </th>
+      <td class="align-middle border-bottom-0">
+        <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+      </td>
+      <td class="align-middle border-bottom-0">
+        <div class="d-flex flex-row top">
+          <button
+            data-mdb-button-init
+            data-mdb-ripple-init
+            class="btn btn-link px-2"
+            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+          >
+            <i class="fas fa-minus"></i>
+          </button>
+
+          <input
+            id="form1"
+            min="0"
+            name="quantity"
+            value="1"
+            type="number"
+            class="form-control form-control-sm"
+            style="width: 50px"
+          />
+
+          <button
+            data-mdb-button-init
+            data-mdb-ripple-init
+            class="btn btn-link px-2"
+            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+          >
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+            <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+          </div>
+        </div>
+      </td>
+      <td class="align-middle border-bottom-0">
+        <p class="mb-0 gia" style="font-weight: 500">38220</p>
+      </td>
+      <td class="align-middle">
+        <button type="button" class="btnDel">Xóa</button>
+      </td>
+      <td class="align-middle">
+        <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+      </td>
+    </tr>
+  
+  <tr class="top1">
+    <th scope="row" class="border-bottom-0">
+      <div class="d-flex align-items-center">
+        <img
+          src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_235840.jpg"
+          style="width: 120px"
+          alt="Book"
+        />
+        <div class="flex-column ms-4">
+          <p class="mb-2">
+            Tớ Đến Với Khoa Học Máy Tính: Logic Và Dữ Liệu
+          </p>
+          <p class="mb-0">Tác giả:TS Tracy Gardner</p>
+        </div>
+      </div>
+    </th>
+    <td class="align-middle border-bottom-0">
+      <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+    </td>
+    <td class="align-middle border-bottom-0">
+      <div class="d-flex flex-row top">
+        <button
+          data-mdb-button-init
+          data-mdb-ripple-init
+          class="btn btn-link px-2"
+          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+        >
+          <i class="fas fa-minus"></i>
+        </button>
+
+        <input
+          id="form1"
+          min="0"
+          name="quantity"
+          value="1"
+          type="number"
+          class="form-control form-control-sm"
+          style="width: 50px"
+        />
+
+        <button
+          data-mdb-button-init
+          data-mdb-ripple-init
+          class="btn btn-link px-2"
+          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+        >
+          <i class="fas fa-plus"></i>
+        </button>
+        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+          <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+        </div>
+      </div>
+    </td>
+    <td class="align-middle border-bottom-0">
+      <p class="mb-0 gia" style="font-weight: 500">38220</p>
+    </td>
+    <td class="align-middle">
+      <button type="button" class="btnDel">Xóa</button>
+    </td>
+    <td class="align-middle">
+      <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+    </td>
+  
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043796032.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Em Học Python - Sách Hướng Dẫn Vui Học Lập Trình - Tập 2
+        </p>
+        <p class="mb-0">Tác giả:Jason R. Briggs (Phan Chương dịch)</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">126000 </p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936107813361.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Clean Code - Mã Sạch Và Con Đường Trở Thành Lập Trình Viên Giỏi (Tái Bản 2023)
+        </p>
+        <p class="mb-0">Tác giả:Nguyễn Văn Trung</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">270200</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/n/h/nhung-nguyen-tac-song-con-trong-lap-trinh-b1.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Những Nguyên Tắc Sống Còn Trong Lập Trình - Để Viết Mã Gọn Gàng Và Dễ Nâng Cấp Bảo Trì
+        </p>
+        <p class="mb-0">Tác giả:Tạ Văn Dũng</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">162500</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/l/a/lam-chu-cac-mau-thiet-ke-b1-tai-ban.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Làm Chủ Các Mẫu Thiết Kế Kinh Điển Trong Lập Trình (Mastering Design Patterns) (Tái Bản)
+        </p>
+        <p class="mb-0">Tác giả:Tạ Văn Dũng</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">162500</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/b/i/bia-lap-tr_nh-c_-b1.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Giáo Trình C++ Và Lập Trình Hướng Đối Tượng (Tái Bản 2023)
+        </p>
+        <p class="mb-0">Tác giả:Phạm Văn Ất, Lê Trường Thông</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Lập Trình</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">130650</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/s/o/so_tay_tu_vung_tieng_anh___tu_luc_thuc_giac_den_khi_di_ngu_bao_gom_sach_va_1_dia_mp3_1_2018_09_20_17_31_16.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Sổ Tay Từ Vựng Tiếng Anh – Từ Lúc Thức Giấc Đến Khi Đi Ngủ (Bao Gồm Sách Và 1 Đĩa Mp3)
+        </p>
+        <p class="mb-0">Tác giả: Kiwa Arai, Katsuhiko, Muto</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Ngoại Ngữ</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">188480</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786047455416.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          4000 Từ Vựng Tiếng Anh Thiết Yếu 2
+        </p>
+        <p class="mb-0">Tác giả: Huy Khang</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Ngoại Ngữ</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">49000</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_192180.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Trau Dồi Ngữ Pháp Và Từ Vựng Tiếng Anh (Improve English Grammar & Vocabulary)
+        </p>
+        <p class="mb-0">Tác giả:	Trần Mạnh Tường, Đức Thành</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Ngoại Ngữ</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">148500</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935072956547.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Tự Học Tiếng Đức Cho Người Mới Bắt Đầu
+        </p>
+        <p class="mb-0">Tác giả:	Nguyễn Hoàng Vĩnh Lộc, Nguyễn Lưu Bảo Đoan</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tâm Lý</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">74750
+    </p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_29433.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Từ Điển Đức-Việt, Việt-Đức
+        </p>
+        <p class="mb-0">Tác giả	Vĩnh Quyền, Như Quỳnh</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Ngoại Ngữ</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">178200</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935072956561.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Ngữ Pháp Tiếng Pháp Căn Bản (Tái Bản 2022)
+        </p>
+        <p class="mb-0">Tác giả:Nguyễn Thức Thành Tín, Viên Thế Khánh Toàn, Vũ Triết Minh, Phạm Song Hoàng Phúc</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Ngoại Ngữ</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500"> 84500</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935072894344.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          GT Tiếng Nhật căn bản theo chủ đề Vol.1 (CD Book)
+        </p>
+        <p class="mb-0">Tác giả: Knishiguchi</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Ngoại Ngữ</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">94500</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786045829462.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Những Kỹ Năng Dành Cho Cuộc Sống
+        </p>
+        <p class="mb-0">Tác giả:Allan Barbara Pease</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Kỹ Năng Sống</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">59280</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086854129.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Thái Độ Sống Tạo Nên Tất Cả
+        </p>
+        <p class="mb-0">Tác giả:J.P. Vaswani</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Kỹ Năng Sống</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">59160</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-8935086854365-8935086846254.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Combo Sách You Can - Không Gì Là Không Thể + You Can Win - Bí Quyết Người Chiến Thắng (Bộ 2 Cuốn)
+        </p>
+        <p class="mb-0">Tác giả:George Matthew Adams, Shiv Khera</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Kỹ Năng Sống</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">149400</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_225532.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Những Bài Học Cuộc Sống (Tái Bản 2021)
+        </p>
+        <p class="mb-0">Tác giả:Hal Urban</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Kỹ Năng Sống</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">57600</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855805.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Bí Quyết Thay Đổi Cuộc Đời (Tái Bản 2022)
+        </p>
+        <p class="mb-0">Tác giả:Dick Lyles</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Kỹ Năng Sống</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">54000</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086856109.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Khi Ta Thay Đổi Thế Giới Sẽ Đổi Thay (Tái Bản 2022)
+        </p>
+        <p class="mb-0">Tác giả:Karen Casey</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Kỹ Năng Sống</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">79200</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855812.jpg"
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Xuyên Qua Nỗi Sợ - Feel The Fear And Do It Anyway (Tái Bản 2022)
+        </p>
+        <p class="mb-0">Tác giả:Susan Jeffers, PH D</p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Kỹ Năng Sống</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">109620</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/flashmagazine/images/page_images/bo_sach_tieu_thuyet_cua_hector_malot_khong_gia_dinh_trong_gia_dinh_bo_2_cuon/2021_10_02_12_20_27_1-390x510.jpg
+
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Bộ Sách Tiểu Thuyết Của Hector Malot: Không Gia Đình 
+        </p>
+        <p class="mb-0">
+          Tác giả:	Hector Malot
+
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tiểu Thuyết</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">176400</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/flashmagazine/images/page_images/doi_khi_toi_co_toi_1_dm/2023_06_08_16_24_36_1-390x510.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Đợi Khi Tôi Có Tội - Tập 1
+        </p>
+        <p class="mb-0">
+
+          Tác giả:	Đinh Mặc
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tiểu Thuyết</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">144000</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/9/7/9786043944365.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Mùa Lá Rụng Trong Vườn
+        </p>
+        <p class="mb-0">
+          Tác giả:	Ma Văn Kháng
+
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tiểu Thuyết</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">73160</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/t/i/tinh_hoa_van_chuong_viet___trung_so_doc_dat_1_2020_05_30_12_59_45.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Tinh Hoa Văn Chương Việt - Trúng Số Độc Đắt
+        </p>
+        <p class="mb-0">
+          Tác giả:	Vũ Trọng Phụng
+
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tiểu Thuyết</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">61200</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/8/9/8936067604641.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Làm Đĩ (Tái Bản 2022)
+        </p>
+        <p class="mb-0">
+          Tác giả:	Vũ Trọng Phụng
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tiểu Thuyết</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">37050</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/8/9/8936067604818.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Giông Tố (Tái Bản 2022)
+        </p>
+        <p class="mb-0">
+          Tác giả	Vũ Trọng Phụng
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tiểu Thuyết</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">55900</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/8/9/8935235238466.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Nghệ Thuật Tiểu Thuyết
+        </p>
+        <p class="mb-0">
+          Tác giả: Milan Kundera
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tiểu Thuyết</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">90480</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/i/m/image_180164_1_43_1_57_1_4_1_2_1_210_1_29_1_98_1_25_1_21_1_5_1_3_1_18_1_18_1_45_1_26_1_32_1_14_1_2200.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Một Thời Hà Nội Hát - Tim Cũng Không Ngờ Làm Nên Lời Ca
+        </p>
+        <p class="mb-0">
+          Tác giả:	Nguyễn Trương Quý
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Tiểu Thuyết</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">108000</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/8/9/8935095631933.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Tủ Sách Truyện Tranh Cổ Tích Việt Nam - Thạch Sanh
+        </p>
+        <p class="mb-0">
+          Tác giả:	Nguyễn Mạnh Thái
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">14400</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/8/9/8935095631940.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Tủ Sách Truyện Tranh Cổ Tích Việt Nam - Sọ Dừa
+        </p>
+        <p class="mb-0">
+          Tác giả:	Nguyễn Mạnh Thái
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">14400</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_40173.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Tủ Sách Truyện Tranh Cổ Tích Việt Nam: Sự Tích Trầu Cau (Tái Bản 2020)
+        </p>
+        <p class="mb-0">
+          Tác giả:	Nguyễn Mạnh Thái soạn lời và minh hoạ
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">14400</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_40174.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Tủ Sách Truyện Tranh Cổ Tích Việt Nam: Sự Tích Hồ Gươm (Tái Bản 2020)
+        </p>
+        <p class="mb-0">
+          Tác giả:	Nguyễn Mạnh Thái soạn lời và minh hoạ
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">14400</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/8/9/8935095624584.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Cổ Tích Việt Nam - Câu Chuyện Khai Quốc
+        </p>
+        <p class="mb-0">
+          Tác giả:	Nguyễn Mạnh Thái
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">54400</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ba_chu_lon_con___truyen_song_ngu_anh___viet/2021_07_13_08_45_35_1-390x510.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Ba Chú Lợn Con - Truyện Song Ngữ Anh - Việt
+        </p>
+        <p class="mb-0">
+          Tác giả:	Stefania Leonardi Hartley
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">26250</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/catalog/product/i/m/image_187719.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Pinocchio - Truyện Song Ngữ Anh - Việt
+        </p>
+        <p class="mb-0">
+          Tác giả	Stefania Leonardi Hartley
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+
+      <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">26250</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/flashmagazine/images/page_images/aladdin_va_cay_den_than_song_ngu_anh___viet___tai_ban_2020/2020_06_08_10_10_51_1-390x510.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Ngày Xửa Ngày Xưa - Aladdin Và Cây Đèn Thần
+        </p>
+        <p class="mb-0">
+          Tác giả:	Stefania Leonardi Hartley
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top" >
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+<div class="so-luong"><input
+  id="form1"
+  min="0"
+  name="quantity"
+  value="1"
+  type="number"
+  class="form-control form-control-sm"
+  style="width: 50px"
+/>
+</div>
+      
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0 gia" style="font-weight: 500">48750</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0 thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+<tr class="top1">
+  <th scope="row" class="border-bottom-0">
+    <div class="d-flex align-items-center">
+      <img
+        src="
+        https://cdn0.fahasa.com/media/flashmagazine/images/page_images/ngay_xua_ngay_xua___co_be_quang_khan_do/2022_09_20_15_46_24_1-390x510.jpg
+        "
+        style="width: 120px"
+        alt="Book"
+      />
+      <div class="flex-column ms-4">
+        <p class="mb-2">
+          Ngày Xửa Ngày Xưa - Cô Bé Quàng Khăn Đỏ
+        </p>
+        <p class="mb-0">
+          Tác giả: Stefania Leonardi Hartley, Maria Rita Gentili
+        </p>
+      </div>
+    </div>
+  </th>
+  <td class="align-middle border-bottom-0">
+    <p class="mb-0" style="font-weight: 500">Cổ Tích</p>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <div class="d-flex flex-row top">
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+      >
+        <i class="fas fa-minus"></i>
+      </button>
+<div class="so-luong">
+  <input
+        id="form1"
+        min="0"
+        name="quantity"
+        value="1"
+        type="number"
+        class="form-control form-control-sm"
+        style="width: 50px"
+      />
+</div>
+      
+
+      <button
+        data-mdb-button-init
+        data-mdb-ripple-init
+        class="btn btn-link px-2"
+        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle border-bottom-0">
+    <p class="gia" style="font-weight: 500">52500</p>
+  </td>
+  <td class="align-middle">
+    <button type="button" class="btnDel">Xóa</button>
+  </td>
+  <td class="align-middle">
+    <p class="mb-0  thanhTien" style="font-weight: 500">-------</p>
+  </td>
+</tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="card shadow-2-strong mb-5 mb-lg-0"
+              
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <div class="col-md-6 bill biill" >
+            <div class="card mb-4">
+              <div class="card-header py-3">
+                <h5 class="mb-0">Hóa Đơn</h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0"
+                  >
+                    Giá Sản Phẩm
+                    <span>10.000đ</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center px-0"
+                  >
+                    Phí Vận Chuyển
+                    <span>Miễn Phí</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3"
+                  >
+                    <div>
+                      <strong>Tổng Số Tiền</strong>
+                      <strong>
+                        <p class="mb-0">(Bao Gồm VAT)</p>
+                      </strong>
+                    </div>
+                    <span class="thanh-tien"><strong>---------</strong></span>
+                  </li>
+                </ul>
+                <fieldset>
+                  <legend>Thông tin giao hàng</legend>
+                  <div data-mdb-input-init class="form-outline form-white mb-4">
+                    <label class="form-label" for="typeName">Người nhận hàng:</label>
+                    <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                      placeholder="VD: Nguyễn Văn A" />
+                
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline form-white mb-4">
+                    <label class="form-label" for="typeText">Số điện thoại:</label>
+                    <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                      placeholder="VD: 012 345 678" minlength="19" maxlength="19" /> 
+                  </div>
+
+                  
+                </fieldset>
+                <button
+                  type="button"
+                  data-mdb-button-init
+                  data-mdb-ripple-init
+                  class="btn btn-primary btn-lg btn-block"
+                >
+                  Thanh Toán
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="bg-dark text-white pt-5 pb-4">
+
+          <div class="container text-center text-md-left">
+    
+    
+            <div class="row text-center text-md-left">
+    
+    
+                              <div class="col-md-3 col-lg-3 col-xl-3 mx-arto mt-3">
+                              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Bookstore</h5>
+                              <p>Bookstore.com nhận đặt hàng trực tuyến và giao trên tận nơi. KHÔNG hổ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả hệ thống Bookstore trên toàn quốc</p>
+                              </div>
+    
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Dịch vụ</h5>
+                        <p>
+                              <a href="#" class="text-white text">Điều khoản sử dụng</a>
+                        </p>
+                        <p>
+                              <a href="#" class="text-white text">Chính sách bảo mật thông tin cá nhân</a>
+                        </p>
+                        <p>
+                              <a href="#" class="text-white text">Chính sách bảo mật thanh toán</a>
+                        </p>
+                        <p>
+                              <a href="#" class="text-white text">Giới thiệu về Bookstore</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Hổ trợ</h5>
+                        <p>
+                              <a href="#" class="text-white text">Chính sách đổi-trả-hoàn tiền</a>
+                        </p>
+                        <p>
+                              <a href="#" class="text-white text">Chính sách bảo hành-bồi hoàn</a>
+                        </p>
+                        <p>
+                              <a href="#" class="text-white text">Chính sách vận chuyển</a>
+                        </p>
+                        <p>
+                              <a href="#" class="text-white text">Các phương thức thanh toán</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Phương thức liên hệ</h5>
+                        <p>
+                              <i class="fas fa-home mr3"></i> 65 Huỳnh thúc kháng
+                      </p>
+                        <p>
+                              <i class="fas fa-envelope mr3"></i> Bookstore@gmail.com
+                        </p>
+                        <p>
+                              <i class="fas fa-phone mr3"></i> 1900636467
+                        </p>
+                        <p>
+                              <i class="fas fa-print mr3"></i> 0000000000
+                        </p>   
+                    </div>
+              </div>
+              <hr class="mb-4"> 
+              <div class="row align-items-center">
+    <div class="col-md-7 col-lg-8">
+                        <span>Copyright @2020 All rights reserved by:</span>
+                        <span class="text-warning">2222</span>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+                              <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-google-plus"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                              </ul>
+                        </div>
+                    </div>
+              </div>
+          </div>
+    </footer>
+
+
+
+    
+    
+   
+    <script src="jvs/testdk.js" >
+    </script>
+    <script>
+         document.getElementById('cart').oninput=tinhTien;
+    </script>
+       
+    
+  </body>
+</html>

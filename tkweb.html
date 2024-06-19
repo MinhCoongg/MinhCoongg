@@ -1,0 +1,1211 @@
+<html lang="en">
+<head>
+ <title>Website Bookstore</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+                 <link rel="stylesheet" href="noidung.css">
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                 <link rel="stylesheet" href="../ĐỒ ÁN WEB/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+                 <link rel="stylesheet" href="../ĐỒ ÁN WEB/vender/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+      <!--danh sách menu-->
+<nav class="navbar navbar-expand-lg " id="menu" >
+          <div class="container-fluid">
+          <img src="../ĐỒ ÁN WEB/img/hello.png" alt="" id="anh">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="d-flex" id="tk">
+              <input class="form-control me-2"  id="tim" type="search" placeholder="Tìm Kiếm..." aria-label="Search" >
+             
+              <button id="button" class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+     <!--phần thông tin-->
+          <div class="dangnhap">
+                <div class="icon_nhap"><i class="fa fa-user" id="as"></i></div>
+                <div><a href="taikhoan.html" id="tendn">TÀIKHOẢN</a></div>            
+          <div class="khung_giohang">
+                <div class="icon_nhap"><i class="fa fa-cart-shopping" id="as"></i></div> 
+                <div><a href="giohang.html" id="tendn">GIỎHÀNG</a></div>      
+          </div> 
+          </div>
+          </div> 
+          </div>
+</nav>
+      <!--phần giới thiệu-->
+      <div id="slideshow">
+            <img src="https://thietkelogo.edu.vn/uploads/images/thiet-ke-do-hoa-khac/banner-sach/13.png" alt="" class="slide">
+            <img src="https://thietkelogo.edu.vn/uploads/images/thiet-ke-do-hoa-khac/banner-sach/6.png" alt="" class="slide">
+            <img src="https://thietkelogo.edu.vn/uploads/images/thiet-ke-do-hoa-khac/banner-sach/7.png" alt="" class="slide">
+            <img src="https://thietkelogo.edu.vn/uploads/images/thiet-ke-do-hoa-khac/banner-sach/16.png" alt="" class="slide">
+            <img src="https://thietkelogo.edu.vn/uploads/images/thiet-ke-do-hoa-khac/banner-sach/19.png" alt="" class="slide">
+            <img src="https://thietkelogo.edu.vn/uploads/images/thiet-ke-do-hoa-khac/banner-sach/2.png" alt="" class="slide">
+            <img src="https://thietkelogo.edu.vn/uploads/images/thiet-ke-do-hoa-khac/banner-sach/15.png" alt="" class="slide">
+            <img src="https://thietkelogo.edu.vn/uploads/images/thiet-ke-do-hoa-khac/banner-sach/17.png" alt="" class="slide">
+      </div>
+      <!--Danh mục sản phẩm-->
+      <img src="../ĐỒ ÁN WEB/img/sale.jpg" alt=""  id="ban">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"> 
+      <!--các thể loại-->  
+        <div class="ngang">
+        <div class="truyen"><i class="fa-brands fa-foursquare" id="bieutuong"></i><h4 id="chus">Danh mục sách</h4></div>
+        <div class="danhmuc"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935236425254.jpg" alt=""  id="ds_qc"><p><a class="list-group-item list-group-item-action" id="t" href="#list-item-1">Truyện tranh</a></p></div>
+        <div class="danhmuc"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066692298.jpg" alt="" id="ds_qc" ><p><a class="list-group-item list-group-item-action" id="t" href="#list-item-2">Tâm Lý</a></p></div>
+        <div class="danhmuc"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_236468.jpg" alt="" id="ds_qc" ><p><a class="list-group-item list-group-item-action" id="t" href="#list-item-3">Lập trình</a></p></div>
+        <div class="danhmuc"><img src="https://cdn0.fahasa.com/media/catalog/product/s/o/so_tay_tu_vung_tieng_anh___tu_luc_thuc_giac_den_khi_di_ngu_bao_gom_sach_va_1_dia_mp3_1_2018_09_20_17_31_16.jpg" alt="" id="ds_qc" ><p><a class="list-group-item list-group-item-action" id="t" href="#list-item-4">Ngoại ngữ</a></p></div>
+        <div class="danhmuc"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_225532.jpg" alt="" id="ds_qc"><p><a class="list-group-item list-group-item-action" id="t" href="#list-item-5">Kỹ năng sống</a></p></div>
+        <div class="danhmuc"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235238466.jpg" alt="" id="ds_qc" ><p><a class="list-group-item list-group-item-action" id="t" href="#list-item-6">Tiểu thuyết</a></p></div>
+        <div class="danhmuc"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935095624584.jpg" alt="" id="ds_qc" ><p><a class="list-group-item list-group-item-action" id="t" href="#list-item-7">Cổ tích</a></p></div>
+     </div>
+     <!--sản phẩm bán cao nhất trong tuần-->
+         <div class="ds_sp">
+         <p id="sp_chay"><b>Sản phẩm bán chạy tuần</b></p>
+         </div>
+                    <!--sản phẩm truyện tranh-->    
+                    <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <p><b>Truyện tranh</b> </P>
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <div class="ds_chay">
+                              <!-- 3 Sản phẩm có lượt bán cao nhất --> 
+                              <!--sản phẩm thứ nhát-->   
+                                       <div id="dl_sp">
+                                       <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_194902.jpg" alt="" id="ds_photo">
+                                       <div class="layout">
+                                       <p id="ten_sp">ONE PIECE 77</p>
+                                       <p id="nxb">NXB: Shueisha</p>
+                                       <div id="thanh_tien"><p>------</p></div>
+                                       <div id="ma_sale">5%</div>
+                                       <div ><p id="gia_sp"><del>149000</del></p></div>
+                                       <form>
+                                       <button id="mua_hang_layout"><a href="#list-item-1" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                       </form>
+                                       </div>      
+                                       </div>
+                                       <!--sản phẩm thứ hai-->   
+                                       <div id="dl_sp">
+                                       <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_227064.jpg" alt="" id="ds_photo">
+                                       <div class="layout">
+                                       <p id="ten_sp">ドラえもん 3 - Doraemon 3</p>
+                                       <p id="nxb">NXB: Shueisha</p>
+                                       <div id="thanh_tien"><p>------</p></div>
+                                       <div id="ma_sale">-5%</div>
+                                       <div ><p id="gia_sp"><del>169000</del></p></div>
+                                       <form>
+                                       <button id="mua_hang_layout"><a href="#list-item-1" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                       </form>
+                                       </div>      
+                                       </div>
+                                       <!--sản phẩm thứ ba-->
+                                       <div id="dl_sp">
+                                       <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9784088830926.jpg" alt=""  id="ds_photo">
+                                       <div class="layout">
+                                       <p id="ten_sp">Dragon Ball Super 18</p>
+                                       <p id="nxb">NXB: Shueisha</p>
+                                       <div id="thanh_tien"><p>------</p></div>
+                                       <div id="ma_sale">-5%</div>
+                                       <div ><p id="gia_sp"><del>149000</del></p></div>
+                                       <form>
+                                       <button id="mua_hang_layout"><a href="#list-item-1" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                       </form>
+                                       </div>      
+                                       </div>            
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!--sản phẩm tâm lý-->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <p><b>Tâm lý</b></p>
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <div class="ds_chay">
+                                        <!--Sản phẩm thứ nhất-->
+                                        <div id="dl_sp">
+                                        <img src=" https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-thi_n-t_i-b_n-tr_i-k_-_i_n-b_n-ph_i_1.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Thiên Tài B.Trái, Kẻ Điên B.Phải</p>
+                                        <p id="nxb">NXB: Thế Giới</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-35%</div>
+                                        <div ><p id="gia_sp"><del>179000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-2" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>    
+                                        <!--sản phẩm thứ 2-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_4_9.jpg" alt="" id="ds_photo" >
+                                        <div class="layout">
+                                        <p id="ten_sp">Tâm Lý Học Về Sự Tự Tôn</p>
+                                        <p id="nxb">NXB: Dân Trí</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-45%</div>
+                                        <div ><p id="gia_sp"><del>129000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-2" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>   
+                                        <!--sản phẩm thứ ba-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066692298.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Thao Túng Tâm Lý</p>
+                                        <p id="nxb">NXB:  Dân Trí</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-35%</div>
+                                        <div><p id="gia_sp"><del>169000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-2" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                    </div>  
+                    </div>
+                    </div>
+                    </div>
+                    <!--sản phẩm lập trình-->
+                   <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <p><b>Lập trình</b></p>
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <div class="ds_chay">
+                                        <!--sản phẩm thứ nhất-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936107813361.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Clean Code</p>
+                                        <p id="nxb">NXB: Dân Trí</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-30%</div>
+                                        <div ><p id="gia_sp"><del>386000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-3" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>
+                                        <!--sản phẩm thứ hai-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043796032.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Em Học Python</p>
+                                        <p id="nxb">NXB: ĐH Quốc Gia Hà Nội</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-10%</div>
+                                        <div ><p id="gia_sp"><del>140000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-3" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>
+                                        <!--sản phẩm thứ ba-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_235840.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Tớ Đến Với Khoa Học Máy Tính</p>
+                                        <p id="nxb">NXB:  Dân Trí</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-22%</div>
+                                        <div ><p id="gia_sp"><del>49000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-3" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>
+                                        </div>      
+                    </div>   
+                    </div>
+                    </div>
+                    </div>
+                    <!--sản phẩm ngoại ngữ-->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <p><b>Ngoại ngữ</b></p>
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <div class="ds_chay">
+                                         <!--sản phẩm thứ nhất-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786047455416.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">4000 Từ Vựng Tiếng Anh</p>
+                                        <p id="nxb">Nhà xuất bản:</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-30%</div>
+                                        <div ><p id="gia_sp"><del>120000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-1" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>
+                                        <!--sản phẩm thứ hai-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_29433.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Từ Điển Đức-Việt, Việt-Đức</p>
+                                        <p id="nxb">Nhà xuất bản:</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-10%</div>
+                                        <div ><p id="gia_sp"><del>198000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-1" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>
+                                        <!-- sản phẩm thứ ba--> 
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935072956561.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Ngữ Pháp Tiếng Pháp Căn Bản</p>
+                                        <p id="nxb">Nhà xuất bản:</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-35%</div>
+                                        <div ><p id="gia_sp"><del>130000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-1" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>  
+                    </div>
+                    </div>  
+                    </div>
+                    </div>
+                    <!--sản phẩm kỹ năng sống-->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <p><b>Kỹ năng sống</b></p>
+                    </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <div class="ds_chay">
+                                        <!--sản phẩm thứ nhất-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_221298.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Cho Đi Là Còn Mãi</p>
+                                        <p id="nxb">NXB:  Tổng Hợp TPHCM</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-10%</div>
+                                        <div ><p id="gia_sp"><del>78000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-5" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>
+                                        <!--sản phẩm thứ hai-->
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086856109.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Ta Thay Đổi Thế Giới Đổi Thay</p>
+                                        <p id="nxb">NXB:  Tổng Hợp TPHCM</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-10%</div>
+                                        <div ><p id="gia_sp"><del>88000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-5" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>
+                                        <!--sản phẩm thứ ba-->   
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786045829462.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Những Kỹ Năng Cho C.Sống</p>
+                                        <p id="nxb">NXB: Tổng Hợp TPHCM</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-24%</div>
+                                        <div ><p id="gia_sp"><del>78000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-5" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>             
+                                        </div>   
+                            
+                    </div>                
+                    </div>
+                    </div>
+                    </div>
+                    <!--sản phẩm tiểu thuyết-->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <p><b>Tiểu thuyết</b></p>
+                    </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <div class="ds_chay">
+                                         <!--sản phẩm thứ nhất-->
+                                         <div id="dl_sp">
+                                         <img src=" https://cdn0.fahasa.com/media/catalog/product/8/9/8936067604641.jpg" alt="" id="ds_photo">
+                                         <div class="layout">
+                                         <p id="ten_sp">Làm Đĩ</p>
+                                         <p id="nxb">NXB: NXB Văn Học</p>
+                                         <div id="thanh_tien"><p>------</p></div>
+                                         <div id="ma_sale">-35%</div>
+                                         <div ><p id="gia_sp"><del>57000</del></p></div>
+                                         <form>
+                                         <button id="mua_hang_layout"><a href="#list-item-6" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                         </form>
+                                         </div>      
+                                         </div>
+                                         <!--sản phẩm thứ hai-->
+                                         <div id="dl_sp">
+                                         <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235238466.jpg" alt="" id="ds_photo">
+                                         <div class="layout">
+                                         <p id="ten_sp">Nghệ Thuật Tiểu Thuyết</p>
+                                         <p id="nxb">NXB: Hội Nhà Văn</p>
+                                         <div id="thanh_tien"><p>------</p></div>
+                                         <div id="ma_sale">-22%</div>
+                                         <div ><p id="gia_sp"><del>116000</del></p></div>
+                                         <form>
+                                         <button id="mua_hang_layout"><a href="#list-item-6" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                         </form>
+                                         </div>      
+                                         </div>
+                                         <!--sản phẩm thứ ba-->
+                                         <div id="dl_sp">
+                                         <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043944365.jpg" alt="" id="ds_photo">
+                                         <div class="layout">
+                                         <p id="ten_sp">Mùa Lá Rụng Trong Vườn</p>
+                                         <p id="nxb">NXB: Văn Học</p>
+                                         <div id="thanh_tien"><p>------</p></div>
+                                         <div id="ma_sale">-38%</div>
+                                         <div ><p id="gia_sp"><del>118000</del></p></div>
+                                         <form>
+                                         <button id="mua_hang_layout"><a href="#list-item-6" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                         </form>
+                                         </div>      
+                                         </div> 
+                    </div>
+                    </div>    
+                    </div>
+                    </div>
+                    <!--sản phẩm cổ tích-->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <p><b>Cổ tích</b></p>
+                    </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <div class="ds_chay">
+                                        <!--sản phẩm thứ nhất-->
+                                        <div id="dl_sp">
+                                        <img src=" https://cdn0.fahasa.com/media/catalog/product/8/9/8935095631940.jpg" alt="" >
+                                        <div class="layout">
+                                        <p id="ten_sp">Sọ dừa</p>
+                                        <p id="nxb">NXB: Mỹ Thuật</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-10%</div>
+                                        <div ><p id="gia_sp"><del>16000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-7" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>
+                                        <!--sản phẩm thứ hai-->     
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_40174.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Sự Tích Hồ Gươm</p>
+                                        <p id="nxb">NXB:  Mỹ Thuật</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-10%</div>
+                                        <div ><p id="gia_sp"><del>18000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-7" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>
+                                        <!--sản phẩm thứ ba-->  
+                                        <div id="dl_sp">
+                                        <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_40173.jpg" alt="" id="ds_photo">
+                                        <div class="layout">
+                                        <p id="ten_sp">Sự Tích Trầu Cau</p>
+                                        <p id="nxb">NXB:  Mỹ Thuật</p>
+                                        <div id="thanh_tien"><p>------</p></div>
+                                        <div id="ma_sale">-10%</div>
+                                        <div ><p id="gia_sp"><del>19000</del></p></div>
+                                        <form>
+                                        <button id="mua_hang_layout"><a href="#list-item-7" class="list-group-item list-group-item-action" id="mua_hang_layout">xem thêm</a></button>
+                                        </form>
+                                        </div>      
+                                        </div>  
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+           </div>
+<!--trang bán sách-->
+<div class="col-8" id="bansach">    
+<div class="thanhcuon">
+     <h4 id="list-item-1" class="truyen"><p id="chu">Truyện tranh</p></h4>
+     <div class="thanhsach">
+
+     <button class="muiten_right" onclick="taochon()" ><i class="fa-solid fa-arrow-right"></i></button>
+     <div class="minhcong">  
+     <div class="hoangnen">
+          <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935236425254.jpg" alt=""  id="photo_sach"><p>
+          <div class="quoang_ba">
+          <div><p class="name">Truyện Tranh Cười Dân Gian Việt Nam</p></div>
+          <div class="vnd"><p>------</p></div>
+                <div class="ma_sale">13%</div>
+                <div ><p class="gia_sp"><del>135000</del></p></div>
+                <form>
+                    <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree1" onclick="showDiv('div1')"> chi tiết</a></button>
+                </form>
+                <p id="sp_dban">Đã bán:34 sản phẩm</p>
+          </div>
+          </div>
+                     
+                      <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9784088830926.jpg" alt="" height="65%" width="100%">
+                        <div class="quoang_ba">
+
+                          <div><p id="name">ドラゴンボール超 18 - Dragon Ball Super</p></div>
+                          <div class="vnd"><p>------</p></div>
+                              <div class="ma_sale">5%</div>
+                              <div ><p class="gia_sp"><del>149000</del></p></div>
+                              <form>
+                                   <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree2" onclick="showDiv('div1')"> chi tiết</a></button>
+                             </form>
+                             <p id="sp_dban">Đã bán:56 sản phẩm</p>
+                       </div>             
+                      </div>
+                      <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_43037.jpg" alt="" height="65%" width="100%">
+                        <div class="quoang_ba">
+
+                          <div><p id="name">Truyện Tranh Trạng Quỷnh </p></div>
+                          <div class="vnd"><p>------</p></div>
+                              <div class="ma_sale">10%</div>
+                              <div ><p class="gia_sp"><del>12000</del></p></div>
+                              <form>
+                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree3" onclick="showDiv('div1')"> chi tiết</a></button>
+                             </form>
+                             <p id="sp_dban">Đã bán:33 sản phẩm</p>
+                            </div>
+                      </div>
+                      <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_194902.jpg" alt="" height="65%" width="100%">
+                        <div class="quoang_ba">
+
+                          <div><p id="name">ＯＮＥ　ＰＩＥＣＥ　　７７</p></div>
+                          <div class="vnd"><p>------</p></div>
+                              <div class="ma_sale">5%</div>
+                              <div ><p class="gia_sp"><del>149000</del></p></div>
+                              <form>
+                                   <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree4" onclick="showDiv('div1')"> chi tiết</a></button>
+                             </form>
+                             <p id="sp_dban">Đã bán:78 sản phẩm</p>
+                            </div>
+                          </div>
+                      <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_227064.jpg" alt="" height="65%" width="100%">
+                        <div class="quoang_ba">
+
+                          <div><p id="name">ドラえもん 3 - Doraemon 3</p></div>
+                          <div class="vnd"><p>------</p></div>
+                              <div class="ma_sale">5%</div>
+                              <div ><p class="gia_sp"><del>169000</del></p></div>
+                              <form>
+                                   <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree5" onclick="showDiv('div1')"> chi tiết</a></button>
+                             </form>
+                             <p id="sp_dban">Đã bán:65 sản phẩm</p>
+                            </div>
+                          </div>
+                      <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043561272_1_1.jpg" alt="" height="65%" width="100%">
+                        <div class="quoang_ba">
+
+                          <div><p id="name">Thỏ Bảy Màu (Tái Bản 2023)</p></div>
+                          <div class="vnd"><p>------</p></div>
+                              <div class="ma_sale">10%</div>
+                              <div ><p class="gia_sp"><del>99000</del></p></div>
+                              <form>
+                                   <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree6" onclick="showDiv('div1')"> chi tiết</a></button>
+                             </form>
+                             <p id="sp_dban">Đã bán:27 sản phẩm</p>
+                            </div>
+                          </div>
+                      
+                  </div>
+      <button class="muiten_left" onclick="taochonc()"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+  </div>
+
+
+  <div class="thanhcuon">
+    <h4 id="list-item-2" class="truyen"><p id="chu">Tâm lý</p></h4>
+ <div class="thanhsach">   
+      <button class="muiten_right" onclick="taisao()" ><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="vansanh">   
+
+             <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066692298.jpg" alt="" height="65%" width="100%">
+                 <div class="quoang_ba">
+                      <div><p id="name">Thao Túng Tâm Lý</p></div>
+                          <div class="vnd"><p>------</p></div>
+                              <div class="ma_sale">35%</div>
+                              <div ><p class="gia_sp"><del>169000</del></p></div>
+                              <form>
+                                   <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree7" onclick="showDiv('div1')"> chi tiết</a></button>
+                             </form>
+                             <p id="sp_dban">Đã bán:104 sản phẩm</p>
+                            </div>
+                          </div>
+                          
+             <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/p/h/ph_c-h_a-ch_n-dung-k_-ph_m-t_i.jpg" alt="" height="65%" width="100%">
+                            <div class="quoang_ba">
+    
+                              <div><p id="name">Tâm Lý Học Tội Phạm</p></div>
+                              <div class="vnd"><p>------</p></div>
+                                  <div class="ma_sale">35%</div>
+                                  <div ><p class="gia_sp"><del>145000</del></p></div>
+                                  <form>
+                                   <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree8" onclick="showDiv('div1')"> chi tiết</a></button>
+                                 </form>
+                                 <p id="sp_dban">Đã bán:69 sản phẩm</p>
+                                </div>
+                              </div>
+            <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086856000.jpg" alt="" height="65%" width="100%">
+                                <div class="quoang_ba">
+        
+                                  <div><p id="name">Bạn Đang Nghịch Gì Với Đời Mình?</p></div>
+                                  <div class="vnd"><p>------</p></div>
+                                      <div class="ma_sale">25%</div>
+                                      <div ><p class="gia_sp"><del>124000</del></p></div>
+                                      <form>
+                                        <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree9" onclick="showDiv('div1')"> chi tiết</a></button>
+                                     </form>
+                                     <p id="sp_dban">Đã bán:78 sản phẩm</p>
+                                    </div>
+                                  </div>
+             <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-thi_n-t_i-b_n-tr_i-k_-_i_n-b_n-ph_i_1.jpg" alt="" height="65%" width="100%">
+                      <div class="quoang_ba">
+                         <div><p id="name">Thiên Tài Bên Trái, Kẻ Điên Bên Phải</p></div>
+                              <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">35%</div>
+                                      <div ><p class="gia_sp"><del>179000</del></p></div>
+                                       <form>
+                                        <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree10" onclick="showDiv('div1')"> chi tiết</a></button>
+                                         </form>
+                                         <p id="sp_dban">Đã bán:145 sản phẩm</p>
+                                        </div>
+                                      </div>
+                                      <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/b/i/bia_tam-ly-hoc-ve-su-truong-thanh_infinal.jpg" alt="" height="65%" width="100%">
+                                        <div class="quoang_ba">
+                
+               <div><p id="name">Tâm Lý Học Về Sự Trưởng Thành</p></div>
+                       <div class="vnd"><p>------</p></div>
+                            <div class="ma_sale">27%</div>
+                                 <div ><p class="gia_sp"><del>109000</del></p></div>
+                                    <form>
+                                        <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree11" onclick="showDiv('div1')"> chi tiết</a></button>
+                                       </form>
+                                          <p id="sp_dban">Đã bán:46 sản phẩm</p>
+                                 </div>
+                             </div>
+                     
+              <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1_4_9.jpg" alt="" height="65%" width="100%">
+                        <div class="quoang_ba">
+                            <div><p id="name">Tâm Lý Học Về Sự Tự Tôn</p></div>
+                                  <div class="vnd"><p>------</p></div>
+                                        <div class="ma_sale">45%</div>
+                                          <div ><p class="gia_sp"><del>129000</del></p></div>
+                                            <form>
+                                             <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree12" onclick="showDiv('div1')"> chi tiết</a></button>
+                                             </form>
+                                             <p id="sp_dban">Đã bán:123 sản phẩm</p>
+                                              </div>
+                                              </div>
+                                             
+                    <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1---b_n-l_-b_c-s_-t_m-l_-c_a-ch_nh-m_nh.jpg" alt="" height="65%" width="100%">
+                                    <div class="quoang_ba">
+                                       <div><p id="name">Bạn Là Bác Sĩ Tâm Lý Của Chính Mình</p></div>
+                                           <div class="vnd"><p>------</p></div>
+                                                       <div class="ma_sale">27%</div>
+                                                          <div ><p class="gia_sp"><del>96000</del></p></div>
+                                                            <form>
+                                                                 <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree13" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                                  </form>
+                                                                    <p id="sp_dban">Đã bán:78 sản phẩm</p>
+                                                                     </div>
+                                                                   </div>
+           </div>
+           
+     <button class="muiten_left" onclick="ngochieu()"><i class="fa-solid fa-arrow-left"></i></button>
+       </div>
+ </div>
+
+ 
+ <div class="thanhcuon">
+  <h4 id="list-item-3" class="truyen"><p id="chu">Lập trình</p></h4>
+<div class="thanhsach">
+    <button class="muiten_right" onclick="homnay()" ><i class="fa-solid fa-arrow-right"></i></button>
+               <div class="lanba">
+                <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_236468.jpg" alt="" height="65%" width="100%">
+                  <div class="quoang_ba">
+                     <div><p id="name">Tớ Học Lập Trình </p></div>
+                         <div class="vnd"><p>------</p></div>
+                                     <div class="ma_sale">22%</div>
+                                        <div ><p class="gia_sp"><del>105000</del></p></div>
+                                          <form>
+                                             <!-- chưa làm-->
+                                             <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree25" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                </form>
+                                                  <p id="sp_dban">Đã bán:36 sản phẩm</p>
+                                                   </div>
+                                                 </div>
+                <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_235840.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Tớ Đến Với Khoa Học Máy Tính</p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">22%</div>
+                                        <div ><p class="gia_sp"><del>49000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree14" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:73 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+           <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043796032.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Em Học Python </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>140000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree15" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:85 sản phẩm</p>
+                                                       </div>
+                                                        </div> <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/b/i/bia-lap-tr_nh-c_-b1.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Giáo Trình C++ </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">33%</div>
+                                        <div ><p class="gia_sp"><del>195000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree16" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:48 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936107813361.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Clean Code </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">30%</div>
+                                        <div ><p class="gia_sp"><del>386000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree17" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:125 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/b/i/bia-ky-thuat-lap-trinh-c-14-03-fix-_1_-b1.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Kỹ Thuật Lập Trình C Căn Bản </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">33%</div>
+                                        <div ><p class="gia_sp"><del>175000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree18" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:73 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+               </div>
+   <button class="muiten_left" onclick="tanphat()"><i class="fa-solid fa-arrow-left"></i></button>
+     </div>
+</div>
+
+
+<div class="thanhcuon">
+  <h4 id="list-item-4" class="truyen"><p id="chu">Ngoại Ngữ</p></h4>
+<div class="thanhsach">
+    <button class="muiten_right" onclick="vietweb()" ><i class="fa-solid fa-arrow-right"></i></button>
+               <div class="lanbon">
+                <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/s/o/so_tay_tu_vung_tieng_anh___tu_luc_thuc_giac_den_khi_di_ngu_bao_gom_sach_va_1_dia_mp3_1_2018_09_20_17_31_16.jpg" alt="" height="65%" width="100%">
+                  <div class="quoang_ba">
+                       <div><p id="name">Sổ Tay Từ Vựng Tiếng Anh </p></div>
+                            <div class="vnd"><p>------</p></div>
+                                  <div class="ma_sale">24%</div>
+                                       <div ><p class="gia_sp"><del>248000</del></p></div>
+                                               <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree19" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                         </form>
+                                                         <p id="sp_dban">Đã bán:74 sản phẩm</p>
+                                                      </div>
+                                                       </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786047455416.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">4000 Từ Vựng Tiếng Anh  </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">30%</div>
+                                        <div ><p class="gia_sp"><del>120000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree20" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:205 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                    <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/s/o/so_tay_tu_vung_tieng_anh_3833-2.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Sổ Tay Từ Vựng Tiếng Anh Thực Hành</p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">30%</div>
+                                        <div ><p class="gia_sp"><del>70000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree21" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:84 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_29433.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">ừ Điển Đức-Việt, Việt-Đức </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>198000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree22" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:125 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                    <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935072956561.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Ngữ Pháp Tiếng Pháp Căn Bản </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">35%</div>
+                                        <div ><p class="gia_sp"><del>130000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree23" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:101 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935072894344.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">GT Tiếng Nhật căn bản  </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>105000</del></p></div>
+                                                <form>
+                                                  <button id="mua_hang"><a id="mua_hang" href="chitiet.html?header=tree24" onclick="showDiv('div1')"> chi tiết</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:94 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+               </div>
+   <button class="muiten_left" onclick="minhdung()"><i class="fa-solid fa-arrow-left"></i></button>
+     </div>
+</div>
+
+<div class="thanhcuon">
+  <h4 id="list-item-5" class="truyen"><p id="chu">Kỹ năng sống</p></h4>
+<div class="thanhsach">   
+    <button class="muiten_right" onclick="tkweb()" ><i class="fa-solid fa-arrow-right"></i></button>
+               <div class="lannam">       
+                <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786045829462.jpg" alt="" height="65%" width="100%">
+                  <div class="quoang_ba">
+                       <div><p id="name">Những Kỹ Năng Dành Cho Cuộc Sống </p></div>
+                            <div class="vnd"><p>------</p></div>
+                                  <div class="ma_sale">24%</div>
+                                       <div ><p class="gia_sp"><del>78000</del></p></div>
+                                               <form>
+                                                <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                         </form>
+                                                         <p id="sp_dban">Đã bán:134 sản phẩm</p>
+                                                      </div>
+                                                       </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086854129.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Thái Độ Sống Tạo Nên Tất Cả </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">13%</div>
+                                        <div ><p class="gia_sp"><del>68000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:70 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                  <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_225532.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Những Bài Học Cuộc Sống  </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>64000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:125 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086856109.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Khi Ta Thay Đổi Thế Giới Sẽ Đổi  </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>88000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:147 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086855805.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Bí Quyết Thay Đổi Cuộc Đời  </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>60000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:122 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                  <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_221298.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Cho Đi Là Còn Mãi </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>78000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:195 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+               </div>
+   <button class="muiten_left" onclick="minhsang()"><i class="fa-solid fa-arrow-left"></i></button>
+     </div>
+</div>
+
+<div class="thanhcuon">
+  <h4 id="list-item-6" class="truyen"><p id="chu">Tiểu thuyết</p></h4>
+      <div class="thanhsach">  
+    <button class="muiten_right" onclick="caothang()" ><i class="fa-solid fa-arrow-right"></i></button>
+               <div class="lansau">
+                <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/flashmagazine/images/page_images/doi_khi_toi_co_toi_1_dm/2023_06_08_16_24_36_1-390x510.jpg" alt="" height="65%" width="100%">
+                  <div class="quoang_ba">
+                       <div><p id="name">Đợi Khi Tôi Có Tội </p></div>
+                            <div class="vnd"><p>------</p></div>
+                                  <div class="ma_sale">10%</div>
+                                       <div ><p class="gia_sp"><del>160000</del></p></div>
+                                               <form>
+                                                <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                         </form>
+                                                         <p id="sp_dban">Đã bán:57 sản phẩm</p>
+                                                      </div>
+                                                       </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043944365.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Mùa Lá Rụng Trong Vườn</p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">38%</div>
+                                        <div ><p class="gia_sp"><del>118000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:124 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                    <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/t/i/tinh_hoa_van_chuong_viet___trung_so_doc_dat_1_2020_05_30_12_59_45.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Trúng Số Độc Đắt  </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>68000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:85 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936067604641.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Làm Đĩ  </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">35%</div>
+                                        <div ><p class="gia_sp"><del>57000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:200 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936067604818.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Giông Tố (Tái Bản 2022) </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">35%</div>
+                                        <div ><p class="gia_sp"><del>86000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:87 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                    <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235238466.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Nghệ Thuật Tiểu Thuyết </p></div>
+                             <div class="vnd"><p>------ </p></div>
+                                   <div class="ma_sale">22%</div>
+                                        <div ><p class="gia_sp"><del>116000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:152 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+               </div>
+   <button class="muiten_left" onclick="hcm()"><i class="fa-solid fa-arrow-left"></i></button>
+     </div>
+</div>     
+          
+<div class="thanhcuon">
+  <h4 id="list-item-7" class="truyen"><p id="chu">Cổ tích</p></h4>
+      <div class="thanhsach">
+    <button class="muiten_right" onclick="ducthang()" ><i class="fa-solid fa-arrow-right"></i></button>
+               <div class="lanbay">
+                <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935095631933.jpg" alt="" height="65%" width="100%">
+                  <div class="quoang_ba">
+                       <div><p id="name"> Thạch Sanh </p></div>
+                            <div class="vnd"><p>------</p></div>
+                                  <div class="ma_sale">10%</div>
+                                       <div ><p class="gia_sp"><del>16000</del></p></div>
+                                               <form>
+                                                <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                         </form>
+                                                         <p id="sp_dban">Đã bán:121 sản phẩm</p>
+                                                      </div>
+                                                       </div>
+                    <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935095631940.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Sọ Dừa </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>16000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:195 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                    <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_40173.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Sự Tích Trầu Cau (Tái Bản 2020) </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>19000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:135 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+             <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_40174.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Sự Tích Hồ Gươm (Tái Bản 2020) </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">10%</div>
+                                        <div ><p class="gia_sp"><del>18000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:195 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                    <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_187719.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Pinocchio  </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">25%</div>
+                                        <div ><p class="gia_sp"><del>35000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:86 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+                   <div  class="hoangnen"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935095624584.jpg" alt="" height="65%" width="100%">
+                   <div class="quoang_ba">
+                        <div><p id="name">Câu Chuyện Khai Quốc </p></div>
+                             <div class="vnd"><p>------</p></div>
+                                   <div class="ma_sale">20%</div>
+                                        <div ><p class="gia_sp"><del>68000</del></p></div>
+                                                <form>
+                                                 <button id="mua_hang"><a href="#"id="mua_hang">Mua hàng</a></button>
+                                                          </form>
+                                                          <p id="sp_dban">Đã bán:84 sản phẩm</p>
+                                                       </div>
+                                                        </div>
+               </div>
+   <button class="muiten_left" onclick="bacton()"><i class="fa-solid fa-arrow-left"></i></button>
+     </div>
+</div>           
+          
+        
+
+
+          <!-- footer -->
+          <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+     <div class="container text-center text-md-left">
+
+
+          <div class="row text-center text-md-left">
+
+
+               <div class="col-md-3 col-lg-3 col-xl-3 mx-arto mt-3">
+
+                         <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Bookstore</h5>
+                         <p>Bookstore.com nhận đặt hàng trực tuyến và giao trên tận nơi. KHÔNG hổ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả hệ thống Bookstore trên toàn quốc</p>
+               </div>
+
+               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Dịch vụ</h5>
+                    <p>
+                         <a href="#" class="text-white text">Điều khoản sử dụng</a>
+                    </p>
+                    <p>
+                         <a href="#" class="text-white text">Chính sách bảo mật thông tin cá nhân</a>
+                    </p>
+                    <p>
+                         <a href="#" class="text-white text">Chính sách bảo mật thanh toán</a>
+                    </p>
+                    <p>
+                         <a href="#" class="text-white text">Giới thiệu về Bookstore</a>
+                    </p>
+
+               </div>
+
+               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Hổ trợ</h5>
+                    <p>
+                         <a href="#" class="text-white text">Chính sách đổi-trả-hoàn tiền</a>
+                    </p>
+                    <p>
+                         <a href="#" class="text-white text">Chính sách bảo hành-bồi hoàn</a>
+                    </p>
+                    <p>
+                         <a href="#" class="text-white text">Chính sách vận chuyển</a>
+                    </p>
+                    <p>
+                         <a href="#" class="text-white text">Các phương thức thanh toán</a>
+                    </p>
+
+               </div>
+
+
+               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Phương thức liên hệ</h5>
+                    <p>
+                         <i class="fas fa-home mr3"></i> 65 Huỳnh thúc kháng
+                    </p>
+                    <p>
+                         <i class="fas fa-envelope mr3"></i> Bookstore@gmail.com
+                    </p>
+                    <p>
+                         <i class="fas fa-phone mr3"></i> 1900636467
+                    </p>
+                    <p>
+                         <i class="fas fa-print mr3"></i> 0000000000
+                    </p>
+
+               </div>
+          </div>
+
+
+          <hr class="mb-4">
+          <hr><hr>
+         <div class="row align-items-center">
+               <div class="col-md-7 col-lg-8">
+
+                    <span>Copyright @2020 All rights reserved by:</span>
+                    <span class="text-warning">2222</span>
+               
+               </div>
+
+               <div class="col-md-11 col-lg-1">
+                    <div class="text-center  text-md-right">
+
+                         <ul class="list-unstyled list-inline">
+                                   <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
+                                   </li>
+                                   <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-twitter"></i></a>
+                                   </li>
+                                   <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-google-plus"></i></a>
+                                   </li>
+                                   <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-linkedin-in"></i></a>
+                                   </li>
+                                   <li class="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-youtube"></i></a>
+                                   </li>
+
+                         </ul>
+                    </div>
+
+               </div>
+         
+          </div>
+
+
+</footer>
+    
+
+  
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="jvs/slide.js"></script>
+          
+          <script>
+               var showDuration=5000;
+               var slide= document.querySelectorAll('.slide');
+               var num=slide.length;
+               let current=0;
+               slide[current].classList.add('current');
+               function next(){
+               slide[current].classList.remove('current');
+               current=(current+1)%num;
+               slide[current].classList.add('current');
+               }
+               setInterval(next, showDuration);
+               // phần thanh kéo cuộn sách
+               function showDiv(divId) {
+                   // Lấy tất cả các div trong container
+                   var divsToHide = document.querySelectorAll('.an>header');
+                   // Ẩn tất cả các div
+                   divsToHide.forEach(function(div) {
+                       div.style.display = 'none';
+                   });
+                   // Hiển thị div được chọn
+                   document.getElementById(divId).style.display = 'block';
+               }
+           </script>
+      
+    
+</body>
+</html>
